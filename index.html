@@ -1,0 +1,184 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>About Me</title>
+</head>
+<link rel="stylesheet" href="Balkrishna_forms.css">
+<body>
+<center>
+  <img src="eculogo.png" width="200" alt="ECU logo" class="Logo">
+</center>
+<!-- Navigator-->
+<nav>
+  <h1> Page Navigation</h1>
+  <ul>
+    <li><a href="#About-Me">About Me</a> </li>
+    <li><a href="#My-Class">My Class</a> </li>
+    <li><a href="#Hobbies">Hobbies</a></li>
+    <li><a href="#js-assignment">JavaScript Assignemnt</a></li>
+  </ul>
+</nav>
+<!--About my section-->
+<section id="About-Me">
+  <h2>About Me</h2>
+  <img src="IdCard.jpg"  width="150" alt="Student Id Card" class="IDcard">
+  <p><b>My name is Balkrishna KC</b></p>
+  <p><i>My Major is Computer Science</i></p>
+  <p><u>I am a Senior Computer Science Student </u></p>
+</section>
+<br><br>
+<section id="My-Class">
+  <h2>This Semester I am taking Following Classes</h2>
+  <div class="container">
+    <div class="grid-1">
+      <h3>CMPSC-3323</h3>
+      <p>Algorithms Analysis</p>
+    </div>
+    <div class="grid-2">
+      <h3>CPSMA-3103</h3>
+      <p>Internet Programming</p>
+    </div>
+    <div class="grid-3">
+      <h3></h3>CMPSC-3253</h2>
+      <p>Introduction to Cloud Security</p>
+    </div>
+
+    <div class="grid-4">
+      <h3>CMPSC-3543</h3>
+      <p>Object Oriented Programming</p>
+    </div>
+
+    <div class="grid-5">
+      <h3>CMPSC-4473-01</h3>
+      <p>Theory of Programming Languages</p>
+    </div>
+
+    <div class="grid-6">
+      <h3>MUS-2433-01</h3>
+      <p>World Music</p>
+    </div>
+  </div>
+</section>
+<br><br>
+<section id="Hobbies">
+  <h2>My Hobbies & Interests</h2>
+  <p>Python Programming and Web Development</p>
+  <p>Stock and Cryptocurrency Trading</p>
+  <p>Visiting National and State Parks</p>
+  <iframe width="400" height="400"
+          src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+          title="YouTube Video"
+          frameborder="0"
+          allowfullscreen>
+  </iframe>
+</section>
+<br><br>
+<!-- JavaScript Assignment-->
+<section id="js-assignment">
+  <h2>JavaScript Task</h2>
+  <div class="js-grid-container">
+
+    <!--Arithmetic-->
+    <div class="js-grid-box">
+      <h2>Arithmetic Calculator</h2>
+      <form onsubmit="arithmeticCalculator(event)">
+        <label>First Number</label>
+        <input type="number" id="Num1" required>
+
+        <label>Second Number</label>
+        <input type="number" id="Num2" required>
+
+        <p>Select Operation</p>
+        <label>
+          <input type="radio" name="operation" value="add" required`>
+          Addition
+        </label>
+        <label>
+          <input type="radio" name="operation" value="subtract">
+          Subtraction
+        </label>
+
+        <label>
+          <input type="radio" name="operation" value="multiply">
+          Multiplication
+        </label>
+        <label>
+          <input type="radio" name="operation" value="divide">
+          Division
+        </label>
+        <button type="submit">Calculate</button>
+
+      </form>
+
+  </div>
+    <!-- Factorial-->
+    <div class="js-grid-box">
+      <h2>Factorial Calculator</h2>
+      <form onsubmit="factorialCalculator(event)">
+        <label>Enter an Integer</label>
+        <input type="number" id="factorialNumber" required>
+        <button type="submit">Find Factorial</button>
+      </form>
+    </div>
+
+    <!--Fibonacci-->
+    <div class="js-grid-box">
+      <h2>Fibonacci Calculator</h2>
+      <form onsubmit="fibonacciCalculator(event)">
+        <label>Enter Nth Fibonacci Number</label>
+        <input type="number" id="fibcNum" required>
+        <button type="submit">Find Fibonacci</button>
+      </form>
+    </div>
+
+    <!--Max Min Range-->
+    <div class="js-grid-box">
+      <h2>Maximum, Minimum, and Range</h2>
+      <form onsubmit="rangeCalculator(event)">
+        <label>First Number:</label>
+        <input type="number" id="rangeNum1" required>
+        <label>Second Number:</label>
+        <input type="number" id="rangeNum2" required>
+        <label>Third Number:</label>
+          <input type="number" id="rangeNum3" required>
+        <button type="submit">Calculator</button>
+      </form>
+    </div>
+
+    <!-- mailing List-->
+    <div class="js-grid-box mailing-box">
+      <h2>Mailing List Sign-Up</h2>
+
+      <form onsubmit="mailingList(event)">
+        <label for="firstName">First Name</label>
+        <input type="text" id="firstName" placeholder="John" required>
+
+        <label for="lastName">Last Name</label>
+        <input type="text" id="lastName" placeholder="Doe" required>
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" placeholder="John@Aol.com" required>
+
+        <label for="zipCode">ZIP Code:</label>
+        <input type="text" id="zipCode" placeholder="12345" required>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </form>
+
+      <div id="mailingOutput"></div>
+    </div>
+  </div>
+</section>
+<br><br>
+<!--ECU Homepage Link-->
+<p>
+  <a href="https://www.ecok.edu"> ECU Homepage</a>
+</p>
+
+<!--External JavaScript-->
+<script src="Balkrishna_forms.js">
+
+</script>
+</body>
+</html>
