@@ -1,8 +1,18 @@
 /* Page background */
 body {
   background-color: #FFFFFA;
-  font-family: Arial;
+  font-family: Arial, sans-serif;
   color: #333333;
+  margin: 0;
+  padding: 20px;
+  line-height: 1.6;
+}
+.center{
+  text-align: center;
+}
+hr{
+  border: 1px solid #E87722;
+  margin: 25px 0;
 }
 
 /* Navigation */
@@ -11,13 +21,23 @@ nav h1 {
 
 }
 
-nav ul {
+.nav-list{
+  display: flex;
+  justify-content: center;
+  gap: 40px;
   list-style-type: none;
+  padding: 10px;
+  text-align: center;
 }
-
+.nav-list li{
+  display: inline;
+}
 nav a {
   text-decoration: none;
   color: #333333;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 8px;
 }
 
 /* Link states */
